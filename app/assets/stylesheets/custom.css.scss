@@ -1,0 +1,5 @@
+@import "twitter-bootstrap-static/bootstrap";
+
+.field_with_errors {
+  @extend .has-error;
+}

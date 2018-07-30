@@ -1,0 +1,12 @@
+<tr>
+  <td><%= link_to author.name, admin_author_url(author) %></td>
+  <td><%= link_to 'Edit', edit_admin_author_path(author) %></td>
+  <td><%= button_to 'Delete',
+                    admin_author_path(author),
+                    method: :delete,
+                    data: {
+                      confirm: "Are you sure you want to delete author #{author.name}?"
+                    },
+                    class: 'btn btn-xs btn-danger' %>
+  </td>
+</tr>

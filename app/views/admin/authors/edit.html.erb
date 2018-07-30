@@ -1,0 +1,9 @@
+<% title 'Edit author' %>
+<h1><%= yield :title %></h1>
+<%= form_tag admin_author_path(@author), method: :put do %>
+  <%= render 'form' %>
+  <%= submit_tag 'Edit', class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Show', admin_author_path(@author) %>
+<%= link_to 'Back', admin_authors_path %>

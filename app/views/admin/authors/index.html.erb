@@ -1,0 +1,18 @@
+<% title 'Listing authors' %>
+<h1><%= yield :title %></h1>
+<table class="table table-stripe">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render partial: 'author', collection: @authors %>
+  </tbody>
+</table>
+
+<p>
+  <%= link_to 'Add a new author', new_admin_author_path %>
+</p>
